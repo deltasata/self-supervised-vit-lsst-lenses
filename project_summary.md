@@ -303,5 +303,3 @@ bias = mean error / mean true value):
     runs, and the 40 production fold models (roughly 400–500 GPU-h).
 - **Record keeping:** append-only lab notebook with hypotheses written before runs, a run registry (about 300
   classification runs), git history (about 325 commits), and logged holdout access.
-- **Tools:** implemented with an AI coding agent (Claude Code) under the author's scientific direction. The author set
-  the research questions, protocol, decisions and reviews.
