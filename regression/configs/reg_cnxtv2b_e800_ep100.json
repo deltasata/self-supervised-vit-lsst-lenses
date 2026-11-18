@@ -1,0 +1,21 @@
+{
+ "model": {
+  "arch": "convnextv2_base.fcmae",
+  "stem": "native",
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.3,
+  "init_ckpt": "experiments/mimF_v2b_e800/encoder.pt"
+ },
+ "train": {
+  "epochs": 100,
+  "bs": 256,
+  "lr": 0.0002,
+  "warmup_epochs": 1,
+  "patience": 20
+ },
+ "seed": 0,
+ "time_limit_min": 1420,
+ "note": "e800 encoder, 100 epochs (= reg_cnxtv2b_e800_ep100_s0/s1 recipe); base for the sweep"
+}

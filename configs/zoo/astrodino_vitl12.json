@@ -1,0 +1,35 @@
+{
+ "model": {
+  "arch": "vit_large_patch16_224",
+  "stem": "plain",
+  "size": 144,
+  "img_size": 144,
+  "patch_size": 12,
+  "init_values": 1e-05,
+  "pretrained": false,
+  "norm": "lsrgb",
+  "drop_path_rate": 0.2,
+  "init_ckpt": "cache/converted/astrodino_vitl12_144_5band.pt"
+ },
+ "train": {
+  "epochs": 30,
+  "bs": 256,
+  "lr": 0.0001,
+  "wd": 0.05,
+  "warmup_epochs": 2,
+  "patience": 8,
+  "llrd": 0.8,
+  "noise_aug": 0.5,
+  "channels_last": false,
+  "plateau_policy": "restart",
+  "restart_patience": 8,
+  "restart_epochs": 12,
+  "max_restarts": 8,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ],
+  "sel_tta": 8
+ },
+ "track": "ZOO-astro-vit"
+}

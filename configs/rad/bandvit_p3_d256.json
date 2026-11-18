@@ -1,0 +1,21 @@
+{
+ "model": {
+  "arch": "bandvit",
+  "patch": 3,
+  "dim": 256,
+  "depth": 8,
+  "heads": 8,
+  "drop_path_rate": 0.1,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 100,
+  "bs": 256,
+  "warmup_epochs": 5,
+  "lr": 0.0005,
+  "wd": 0.05,
+  "patience": 12
+ },
+ "track": "RAD-bandtoken"
+}

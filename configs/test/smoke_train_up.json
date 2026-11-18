@@ -1,0 +1,2 @@
+{"model": {"arch": "convnext_tiny.in12k_ft_in1k", "stem": "upsample", "size": 128, "pretrained": true, "norm": "asinh", "norm_a": 3.0, "drop_path_rate": 0.1},
+ "train": {"epochs": 1, "bs": 256, "lr": 2e-4, "max_train": 20000, "patience": 5}, "track": "test"}

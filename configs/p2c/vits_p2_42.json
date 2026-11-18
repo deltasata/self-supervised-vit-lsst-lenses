@@ -1,0 +1,22 @@
+{
+ "model": {
+  "arch": "vit_small_patch16_224",
+  "stem": "plain",
+  "size": 42,
+  "img_size": 42,
+  "patch_size": 2,
+  "pretrained": false,
+  "drop_path_rate": 0.1,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 100,
+  "bs": 256,
+  "warmup_epochs": 5,
+  "wd": 0.05,
+  "patience": 12,
+  "lr": 0.0005
+ },
+ "track": "P2-C"
+}

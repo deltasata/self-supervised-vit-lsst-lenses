@@ -1,0 +1,13 @@
+# Versions used in the project (AMD MI300A, ROCm 6.3). Install the torch build that matches your GPU/driver.
+torch==2.9.1
+timm==1.0.30
+numpy==2.4.3
+pandas==3.0.2
+pyarrow==23.0.1
+scikit-learn==1.9.1
+scipy==1.17.1
+astropy==7.2.0
+lightgbm==4.7.0
+matplotlib==3.10.8
+huggingface_hub==1.10.2
+safetensors

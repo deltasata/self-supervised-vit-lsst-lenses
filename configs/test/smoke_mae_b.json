@@ -1,0 +1,15 @@
+{
+ "finetune_cfg": "configs/p2b/ft_maeb16_224.json",
+ "mae": {
+  "epochs": 1,
+  "bs": 256,
+  "warmup_epochs": 1,
+  "max_images": 10000,
+  "dec_dim": 512,
+  "dec_heads": 16
+ },
+ "finetune_set": [
+  "train.epochs=1",
+  "train.max_train=10000"
+ ]
+}

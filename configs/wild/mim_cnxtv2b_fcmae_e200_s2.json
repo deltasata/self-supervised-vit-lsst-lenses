@@ -1,0 +1,21 @@
+{
+ "finetune_cfg": "configs/explore/ft_cnxtv2b_rst.json",
+ "mim": {
+  "epochs": 200,
+  "bs": 256,
+  "lr": 0.0003,
+  "warmup_epochs": 10,
+  "mask_ratio": 0.6,
+  "mask_px": 4,
+  "split": "train"
+ },
+ "track": "P2B-cnn",
+ "finetune_set": [
+  "train.noise_aug=0.5",
+  "train.llrd=0.75",
+  "train.lr=2e-4",
+  "train.max_restarts=8",
+  "train.sel_tta=8"
+ ],
+ "seed": 2
+}

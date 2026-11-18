@@ -1,0 +1,20 @@
+{
+ "finetune_cfg": "configs/explore/ft_vitl_p3_42_in1kmae.json",
+ "mae": {
+  "epochs": 800,
+  "bs": 512,
+  "lr": 0.00015,
+  "warmup_epochs": 20,
+  "mask_ratio": 0.75,
+  "split": "train"
+ },
+ "track": "P2-AB",
+ "finetune_set": [
+  "model.drop_path_rate=0.3",
+  "train.noise_aug=0.5",
+  "train.llrd=0.85",
+  "train.lr=1e-4",
+  "train.max_restarts=8",
+  "train.sel_tta=8"
+ ]
+}

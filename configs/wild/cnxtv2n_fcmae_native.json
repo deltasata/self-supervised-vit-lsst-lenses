@@ -1,0 +1,18 @@
+{
+ "model": {
+  "arch": "convnextv2_nano.fcmae",
+  "stem": "native",
+  "pretrained": true,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.1
+ },
+ "train": {
+  "epochs": 40,
+  "bs": 256,
+  "lr": 0.0002,
+  "wd": 0.05,
+  "patience": 8
+ },
+ "track": "WILD"
+}

@@ -1,0 +1,22 @@
+{
+ "model": {
+  "arch": "eva02_small_patch14_224.mim_in22k",
+  "stem": "plain",
+  "size": 224,
+  "img_size": 224,
+  "pretrained": true,
+  "drop_path_rate": 0.1,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 30,
+  "bs": 256,
+  "warmup_epochs": 2,
+  "wd": 0.05,
+  "patience": 6,
+  "lr_backbone_mult": 0.5,
+  "lr": 0.0001
+ },
+ "track": "WILD"
+}

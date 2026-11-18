@@ -1,0 +1,21 @@
+{
+ "model": {
+  "arch": "convnextv2_base.fcmae",
+  "stem": "native",
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.3,
+  "init_ckpt": "experiments/mimF_v2b_e800/encoder.pt"
+ },
+ "train": {
+  "epochs": 60,
+  "bs": 256,
+  "lr": 0.0002,
+  "warmup_epochs": 1,
+  "patience": 15
+ },
+ "seed": 0,
+ "time_limit_min": 1420,
+ "note": "regression (option a) from the 800-ep stamp-MIM ConvNeXtV2-B encoder (mimF_v2b_e800); compare with reg_cnxtv2b_e400"
+}

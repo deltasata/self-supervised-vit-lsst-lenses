@@ -1,0 +1,61 @@
+{
+ "model": {
+  "arch": "convnextv2_base.fcmae",
+  "stem": "native",
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.3,
+  "init_ckpt": "experiments/mim_cnxtv2b_fcmae/encoder.pt"
+ },
+ "train": {
+  "epochs": 40,
+  "bs": 256,
+  "lr": 0.0002,
+  "wd": 0.05,
+  "warmup_epochs": 1,
+  "opt": "adamw",
+  "label_smoothing": 0.0,
+  "shift": 1,
+  "subpixel": 0.0,
+  "noise_aug": 0.5,
+  "ema": 0.999,
+  "patience": 12,
+  "grad_clip": 2.0,
+  "train_pipelines": [
+   "D1",
+   "D2"
+  ],
+  "max_train": null,
+  "channels_last": true,
+  "compile": false,
+  "lr_backbone_mult": 1.0,
+  "plateau_policy": "restart",
+  "restart_patience": 12,
+  "restart_epochs": 12,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ],
+  "max_restarts": 2,
+  "sam_rho": 0.0,
+  "sam_from_cycle": 0,
+  "sel_half": null,
+  "llrd": 0.75,
+  "kd_path": null,
+  "kd_alpha": 0.0,
+  "kd_T": 1.0,
+  "dim_aug": 0.0,
+  "dim_min": 0.3,
+  "n_folds": 10
+ },
+ "seed": 0,
+ "time_limit_min": 707,
+ "track": "EXP",
+ "git": "1a5d85a",
+ "n_train": 153000,
+ "n_val": 17000,
+ "params_M": 87.697921,
+ "slurm_job": "12177023",
+ "note": "k-fold copy of the frozen recipe mimv2b_llrd75"
+}

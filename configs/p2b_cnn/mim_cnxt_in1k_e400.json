@@ -1,0 +1,13 @@
+{
+ "finetune_cfg": "configs/p1/cnxt_native_in1k.json",
+ "mim": {
+  "epochs": 400,
+  "bs": 256,
+  "lr": 0.0005,
+  "warmup_epochs": 10,
+  "mask_ratio": 0.6,
+  "mask_px": 4,
+  "split": "train"
+ },
+ "track": "P2-B-cnn"
+}

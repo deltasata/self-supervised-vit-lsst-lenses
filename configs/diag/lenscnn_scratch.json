@@ -1,0 +1,14 @@
+{
+ "model": {
+  "arch": "lenscnn",
+  "width": 64,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 60,
+  "lr": 0.002,
+  "patience": 10
+ },
+ "track": "P1-extra"
+}

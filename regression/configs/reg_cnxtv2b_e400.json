@@ -1,0 +1,21 @@
+{
+ "model": {
+  "arch": "convnextv2_base.fcmae",
+  "stem": "native",
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.3,
+  "init_ckpt": "experiments/mimF_v2b_e400/encoder.pt"
+ },
+ "train": {
+  "epochs": 60,
+  "bs": 256,
+  "lr": 0.0002,
+  "warmup_epochs": 1,
+  "patience": 15
+ },
+ "seed": 0,
+ "time_limit_min": 1420,
+ "note": "regression baseline (option a targets) from the encoder of configs/kfold/cnn400_plain.json"
+}

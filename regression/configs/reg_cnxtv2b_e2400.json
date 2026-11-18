@@ -1,0 +1,22 @@
+{
+ "model": {
+  "arch": "convnextv2_base.fcmae",
+  "stem": "native",
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.3,
+  "init_ckpt": "experiments/mimF_v2b_e1600p800/encoder.pt"
+ },
+ "train": {
+  "epochs": 150,
+  "bs": 256,
+  "lr": 0.0002,
+  "warmup_epochs": 1,
+  "patience": 30,
+  "zmix": 3
+ },
+ "seed": 0,
+ "time_limit_min": 1420,
+ "note": "v2 targets; regression from the e1600+800 continued-MIM encoder (mimF_v2b_e1600p800); recipe = reg2_e1600_zmix3 (lr2e-4, 150 ep, zmix3)"
+}

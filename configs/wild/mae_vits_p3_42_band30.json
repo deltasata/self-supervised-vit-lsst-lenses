@@ -1,0 +1,13 @@
+{
+ "finetune_cfg": "configs/p2b/ft_vits_p3_42.json",
+ "mae": {
+  "epochs": 400,
+  "bs": 512,
+  "lr": 0.00015,
+  "warmup_epochs": 20,
+  "mask_ratio": 0.75,
+  "band_drop": 0.3,
+  "split": "train"
+ },
+ "track": "WILD-P2B"
+}

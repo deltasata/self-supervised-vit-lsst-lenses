@@ -1,0 +1,34 @@
+{
+ "model": {
+  "arch": "vit_large_patch16_224",
+  "stem": "plain",
+  "size": 42,
+  "img_size": 42,
+  "patch_size": 3,
+  "pretrained": false,
+  "drop_path_rate": 0.3,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "init_values": 1e-05,
+  "init_ckpt": "cache/converted/astrodino_vitl3_42_5band.pt"
+ },
+ "train": {
+  "epochs": 60,
+  "bs": 256,
+  "warmup_epochs": 3,
+  "wd": 0.05,
+  "patience": 16,
+  "lr": 0.0001,
+  "plateau_policy": "restart",
+  "restart_patience": 16,
+  "restart_epochs": 16,
+  "max_restarts": 8,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ],
+  "llrd": 0.8,
+  "noise_aug": 0.5
+ },
+ "track": "P2-AB"
+}

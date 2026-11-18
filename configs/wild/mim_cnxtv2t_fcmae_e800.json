@@ -1,0 +1,20 @@
+{
+ "finetune_cfg": "configs/wild/ft_cnxtv2t_rst.json",
+ "mim": {
+  "epochs": 800,
+  "bs": 256,
+  "lr": 0.0005,
+  "warmup_epochs": 10,
+  "mask_ratio": 0.6,
+  "mask_px": 4,
+  "split": "train"
+ },
+ "track": "WILD-P2B-cnn",
+ "finetune_set": [
+  "train.noise_aug=0.5",
+  "train.llrd=0.75",
+  "train.lr=2e-4",
+  "train.max_restarts=8",
+  "train.sel_tta=8"
+ ]
+}

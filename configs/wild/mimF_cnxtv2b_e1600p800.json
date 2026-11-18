@@ -1,0 +1,23 @@
+{
+ "finetune_cfg": "configs/wild/ft_cnxtv2b_init_e1600.json",
+ "mim": {
+  "epochs": 800,
+  "bs": 256,
+  "lr": 0.00015,
+  "warmup_epochs": 10,
+  "mask_ratio": 0.6,
+  "mask_px": 4,
+  "split": "train"
+ },
+ "track": "P3-encoder",
+ "finetune_set": [
+  "train.noise_aug=0.5",
+  "train.llrd=0.75",
+  "train.lr=2e-4",
+  "train.max_restarts=8",
+  "train.sel_tta=8"
+ ],
+ "seed": 0,
+ "skip_finetune": true,
+ "note": "continued SimMIM from the e1600 encoder (fresh decoder, new warm-up + cosine) for 800 more epochs -> e2400-equivalent; encoder for regression (longer pretraining was the largest regression gain: e400 -0.79, e800 -0.92, e1600 -0.95)"
+}

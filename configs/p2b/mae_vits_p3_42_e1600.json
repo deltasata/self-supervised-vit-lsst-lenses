@@ -1,0 +1,12 @@
+{
+ "finetune_cfg": "configs/p2b/ft_vits_p3_42_rst.json",
+ "mae": {
+  "epochs": 1600,
+  "bs": 512,
+  "lr": 0.00015,
+  "warmup_epochs": 20,
+  "mask_ratio": 0.75,
+  "split": "train"
+ },
+ "track": "P2-B"
+}

@@ -1,0 +1,15 @@
+{
+ "finetune_cfg": "configs/inputgeom/ft_pad45.json",
+ "mae": {
+  "epochs": 400,
+  "bs": 512,
+  "lr": 0.00015,
+  "warmup_epochs": 20,
+  "mask_ratio": 0.75,
+  "split": "train"
+ },
+ "track": "R-inputgeom",
+ "finetune_set": [],
+ "seed": 0,
+ "note": "Input-geometry control, arm pad45: MAE exactly as mae_vitb_p3_42_in1kmae_e400 (same mae block)."
+}

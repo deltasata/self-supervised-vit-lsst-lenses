@@ -1,0 +1,17 @@
+{
+ "model": {
+  "arch": "lenscnn",
+  "width": 48,
+  "nblk": 3,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 60,
+  "patience": 16,
+  "noise_aug": 0.5,
+  "plateau_policy": "none",
+  "lr": 0.002
+ },
+ "track": "P1-cnnsweep"
+}

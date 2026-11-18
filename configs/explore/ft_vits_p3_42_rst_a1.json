@@ -1,0 +1,31 @@
+{
+ "model": {
+  "arch": "vit_small_patch16_224",
+  "stem": "plain",
+  "size": 42,
+  "img_size": 42,
+  "patch_size": 3,
+  "pretrained": false,
+  "drop_path_rate": 0.1,
+  "norm": "asinh",
+  "norm_a": 1.0
+ },
+ "train": {
+  "epochs": 60,
+  "bs": 512,
+  "warmup_epochs": 3,
+  "wd": 0.05,
+  "patience": 16,
+  "lr": 0.0002,
+  "plateau_policy": "restart",
+  "restart_patience": 16,
+  "restart_epochs": 16,
+  "max_restarts": 32,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ],
+  "noise_aug": 0.5
+ },
+ "track": "EXP"
+}

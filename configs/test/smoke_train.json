@@ -1,0 +1,2 @@
+{"model": {"arch": "resnet18.a1_in1k", "stem": "native", "pretrained": true, "norm": "asinh", "norm_a": 3.0},
+ "train": {"epochs": 3, "bs": 512, "lr": 5e-4, "max_train": 60000, "ema": 0.99, "patience": 5}, "track": "test"}

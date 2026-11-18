@@ -1,0 +1,24 @@
+{
+ "model": {
+  "arch": "vit_base_patch16_224.mae",
+  "stem": "plain",
+  "pretrained": true,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "size": 42,
+  "img_size": 42,
+  "patch_size": 3,
+  "drop_path_rate": 0.3,
+  "init_ckpt": "experiments/mae_vitb_p3_42_in1kmae_e400/encoder.pt"
+ },
+ "train": {
+  "epochs": 100,
+  "bs": 512,
+  "lr": 0.00015,
+  "warmup_epochs": 3,
+  "patience": 20
+ },
+ "seed": 0,
+ "time_limit_min": 1420,
+ "note": "regression baseline (option a targets) from the encoder of configs/kfold/vit_plain.json"
+}

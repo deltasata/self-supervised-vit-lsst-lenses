@@ -1,0 +1,13 @@
+{
+ "finetune_cfg": "configs/wild/cnxtv2b_fcmae_native.json",
+ "mim": {
+  "epochs": 200,
+  "bs": 256,
+  "lr": 0.0003,
+  "warmup_epochs": 10,
+  "mask_ratio": 0.6,
+  "mask_px": 4,
+  "split": "train"
+ },
+ "track": "WILD-P2B-cnn"
+}

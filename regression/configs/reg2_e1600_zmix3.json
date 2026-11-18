@@ -1,0 +1,22 @@
+{
+ "model": {
+  "arch": "convnextv2_base.fcmae",
+  "stem": "native",
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.3,
+  "init_ckpt": "experiments/mimF_v2b_e1600/encoder.pt"
+ },
+ "train": {
+  "epochs": 150,
+  "bs": 256,
+  "lr": 0.0002,
+  "warmup_epochs": 1,
+  "patience": 30,
+  "zmix": 3
+ },
+ "seed": 0,
+ "time_limit_min": 1420,
+ "note": "v2 targets (SIMCT positions x0.168). e1600 encoder, lr2e-4, 150 ep, patience 30, z_src 3-component mixture (zmix3 -1.004 vs Gaussian -0.945..-0.951 on v1 targets)"
+}

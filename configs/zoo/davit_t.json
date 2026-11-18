@@ -1,0 +1,32 @@
+{
+ "model": {
+  "arch": "davit_tiny.msft_in1k",
+  "stem": "plain",
+  "size": 224,
+  "pretrained": true,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.1
+ },
+ "train": {
+  "epochs": 30,
+  "bs": 256,
+  "lr": 0.0003,
+  "wd": 0.05,
+  "warmup_epochs": 2,
+  "patience": 8,
+  "llrd": 0.75,
+  "noise_aug": 0.5,
+  "channels_last": false,
+  "plateau_policy": "restart",
+  "restart_patience": 8,
+  "restart_epochs": 12,
+  "max_restarts": 8,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ],
+  "sel_tta": 8
+ },
+ "track": "ZOO-hier"
+}

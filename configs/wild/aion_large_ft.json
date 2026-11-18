@@ -1,0 +1,19 @@
+{
+ "model": {
+  "arch": "aion",
+  "variant": "aion-large",
+  "flux_scale": 1.0,
+  "drop_rate": 0.1
+ },
+ "train": {
+  "epochs": 30,
+  "bs": 48,
+  "warmup_epochs": 2,
+  "wd": 0.05,
+  "patience": 6,
+  "lr": 3e-05,
+  "lr_backbone_mult": 0.5,
+  "channels_last": false
+ },
+ "track": "WILD-A"
+}

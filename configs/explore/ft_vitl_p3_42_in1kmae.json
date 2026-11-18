@@ -1,0 +1,30 @@
+{
+ "model": {
+  "arch": "vit_large_patch16_224.mae",
+  "stem": "plain",
+  "size": 42,
+  "img_size": 42,
+  "patch_size": 3,
+  "pretrained": true,
+  "drop_path_rate": 0.3,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 60,
+  "bs": 512,
+  "warmup_epochs": 3,
+  "wd": 0.05,
+  "patience": 16,
+  "lr": 0.0001,
+  "plateau_policy": "restart",
+  "restart_patience": 16,
+  "restart_epochs": 16,
+  "max_restarts": 32,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ]
+ },
+ "track": "P2-AB"
+}

@@ -1,0 +1,67 @@
+{
+ "model": {
+  "arch": "vit_base_patch16_224.mae",
+  "stem": "plain",
+  "pretrained": true,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "size": null,
+  "img_size": 45,
+  "patch_size": 3,
+  "drop_path_rate": 0.3,
+  "pad": [
+   2,
+   2,
+   2,
+   2
+  ]
+ },
+ "train": {
+  "epochs": 60,
+  "bs": 512,
+  "lr": 0.00015,
+  "wd": 0.05,
+  "warmup_epochs": 3,
+  "opt": "adamw",
+  "label_smoothing": 0.0,
+  "shift": 1,
+  "subpixel": 0.0,
+  "noise_aug": 0.5,
+  "ema": 0.999,
+  "patience": 16,
+  "grad_clip": 2.0,
+  "train_pipelines": [
+   "D1",
+   "D2"
+  ],
+  "max_train": null,
+  "channels_last": true,
+  "compile": false,
+  "lr_backbone_mult": 1.0,
+  "plateau_policy": "restart",
+  "restart_patience": 16,
+  "restart_epochs": 16,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ],
+  "max_restarts": 8,
+  "sam_rho": 0.0,
+  "sam_from_cycle": 0,
+  "sel_half": null,
+  "sel_tta": 8,
+  "llrd": 0.75,
+  "kd_path": null,
+  "kd_alpha": 0.0,
+  "kd_T": 1.0,
+  "dim_aug": 0.0,
+  "dim_min": 0.3,
+  "mixup": 0.0,
+  "mixup_alpha": 0.4,
+  "rot_aug": 0.0,
+  "rot_max": 45.0
+ },
+ "seed": 0,
+ "track": "R-inputgeom",
+ "note": "Input-geometry control, arm pad45. Identical to mae_vitb_p3_42_in1kmae_e400_ft (resolved config) except the 41-px input handling."
+}

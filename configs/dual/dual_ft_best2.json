@@ -1,0 +1,30 @@
+{
+ "model": {
+  "arch": "dual",
+  "vit_ckpt": "experiments/maeB_llrd75_dp3/best.pt",
+  "cnn_ckpt": "experiments/mimv2b_llrd75/best.pt"
+ },
+ "train": {
+  "epochs": 20,
+  "bs": 256,
+  "lr": 3e-05,
+  "wd": 0.05,
+  "warmup_epochs": 1,
+  "noise_aug": 0.5,
+  "ema": 0.999,
+  "llrd": 0.75,
+  "patience": 16,
+  "grad_clip": 2.0,
+  "channels_last": true,
+  "plateau_policy": "restart",
+  "restart_patience": 8,
+  "restart_epochs": 8,
+  "max_restarts": 4,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ],
+  "sel_tta": 8
+ },
+ "track": "P2-hybrid"
+}

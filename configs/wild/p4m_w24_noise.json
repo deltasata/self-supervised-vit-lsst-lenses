@@ -1,0 +1,16 @@
+{
+ "model": {
+  "arch": "p4mcnn",
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "width": 24
+ },
+ "train": {
+  "epochs": 60,
+  "lr": 0.002,
+  "patience": 10,
+  "noise_aug": 0.5,
+  "channels_last": false
+ },
+ "track": "WILD"
+}

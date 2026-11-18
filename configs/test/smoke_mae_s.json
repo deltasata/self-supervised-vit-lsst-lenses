@@ -1,0 +1,13 @@
+{
+ "finetune_cfg": "configs/p2b/ft_vits_p3_42.json",
+ "mae": {
+  "epochs": 2,
+  "bs": 512,
+  "warmup_epochs": 1,
+  "max_images": 20000
+ },
+ "finetune_set": [
+  "train.epochs=1",
+  "train.max_train=20000"
+ ]
+}

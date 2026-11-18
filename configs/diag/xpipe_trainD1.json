@@ -1,0 +1,18 @@
+{
+ "model": {
+  "arch": "resnet18.a1_in1k",
+  "stem": "native",
+  "pretrained": true,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 30,
+  "lr": 0.0005,
+  "patience": 6,
+  "train_pipelines": [
+   "D1"
+  ]
+ },
+ "track": "DIAG-crosspipe"
+}

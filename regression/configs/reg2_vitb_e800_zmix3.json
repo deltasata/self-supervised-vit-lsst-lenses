@@ -1,0 +1,25 @@
+{
+ "model": {
+  "arch": "vit_base_patch16_224.mae",
+  "stem": "plain",
+  "pretrained": true,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "size": 42,
+  "img_size": 42,
+  "patch_size": 3,
+  "drop_path_rate": 0.3,
+  "init_ckpt": "experiments/mae_vitb_p3_42_in1kmae_e800/encoder.pt"
+ },
+ "train": {
+  "epochs": 200,
+  "bs": 512,
+  "lr": 0.00015,
+  "warmup_epochs": 3,
+  "patience": 30,
+  "zmix": 3
+ },
+ "seed": 0,
+ "time_limit_min": 1420,
+ "note": "v2 targets, zmix3. ViT-B/3px (MAE e800) encoder for ensemble diversity: mixing ViT + CNN cut classification loss ~9 %."
+}

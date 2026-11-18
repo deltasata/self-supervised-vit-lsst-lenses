@@ -1,0 +1,17 @@
+{
+ "model": {
+  "arch": "resnet50",
+  "stem": "native",
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 60,
+  "patience": 16,
+  "noise_aug": 0.5,
+  "plateau_policy": "none",
+  "lr": 0.001
+ },
+ "track": "P1-cnnsweep"
+}

@@ -1,0 +1,32 @@
+{
+ "model": {
+  "arch": "pointset",
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "k": 10,
+  "patch": 11,
+  "dim": 256,
+  "depth": 6,
+  "heads": 8,
+  "thr": 0.3,
+  "drop_path_rate": 0.1
+ },
+ "train": {
+  "epochs": 80,
+  "bs": 512,
+  "lr": 0.0005,
+  "wd": 0.05,
+  "warmup_epochs": 3,
+  "noise_aug": 0.5,
+  "ema": 0.999,
+  "patience": 16,
+  "plateau_policy": "restart",
+  "restart_patience": 16,
+  "restart_epochs": 16,
+  "max_restarts": 6,
+  "sel_tta": 8,
+  "channels_last": false,
+  "grad_clip": 2.0
+ },
+ "track": "RADICAL-pointset"
+}

@@ -1,0 +1,13 @@
+{
+ "finetune_cfg": "configs/diag/lenscnn_scratch.json",
+ "mim": {
+  "epochs": 400,
+  "bs": 512,
+  "lr": 0.002,
+  "warmup_epochs": 10,
+  "mask_ratio": 0.6,
+  "mask_px": 4,
+  "split": "train"
+ },
+ "track": "P2-B-cnn"
+}

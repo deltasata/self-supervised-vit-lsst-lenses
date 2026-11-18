@@ -1,0 +1,14 @@
+{
+ "train": {
+  "epochs": 60,
+  "patience": 16,
+  "plateau_policy": "restart",
+  "restart_patience": 16,
+  "restart_epochs": 16,
+  "max_restarts": 32,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ]
+ }
+}

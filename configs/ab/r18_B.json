@@ -1,0 +1,21 @@
+{
+ "model": {
+  "arch": "resnet18.a1_in1k",
+  "stem": "native",
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0
+ },
+ "train": {
+  "epochs": 60,
+  "bs": 512,
+  "lr": 0.001,
+  "wd": 0.05,
+  "patience": 16,
+  "plateau_policy": "restart",
+  "restart_patience": 16,
+  "restart_epochs": 16,
+  "max_restarts": 32
+ },
+ "track": "AB-P1-cnn"
+}

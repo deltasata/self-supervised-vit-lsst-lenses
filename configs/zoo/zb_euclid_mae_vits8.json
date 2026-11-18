@@ -1,0 +1,36 @@
+{
+ "model": {
+  "arch": "vit_small_patch8_224",
+  "stem": "plain",
+  "size": 112,
+  "pretrained": false,
+  "norm": "asinh",
+  "norm_a": 3.0,
+  "drop_path_rate": 0.1,
+  "img_size": 112,
+  "global_pool": "avg",
+  "fc_norm": true,
+  "init_ckpt": "cache/converted/euclid_mae_vits8_112_5band.pt"
+ },
+ "train": {
+  "epochs": 30,
+  "bs": 256,
+  "lr": 0.0003,
+  "wd": 0.05,
+  "warmup_epochs": 2,
+  "patience": 8,
+  "llrd": 0.75,
+  "noise_aug": 0.5,
+  "channels_last": false,
+  "plateau_policy": "restart",
+  "restart_patience": 8,
+  "restart_epochs": 12,
+  "max_restarts": 8,
+  "restart_lr_range": [
+   0.25,
+   2.0
+  ],
+  "sel_tta": 8
+ },
+ "track": "ZOO-zoobot-vit"
+}
