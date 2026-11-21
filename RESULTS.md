@@ -1,4 +1,4 @@
-# Project summary: finding strongly lensed AGN in simulated LSST images with deep learning
+# Results: finding strongly lensed AGN in simulated LSST images with deep learning
 
 *LSST Lensed AGN Static Search Challenge (agnchallenge.cbpf.br), 2026-10-06 → 2026-11-18. Status as of 2026-11-18.*
 

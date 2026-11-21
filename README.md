@@ -1,11 +1,11 @@
-# Lensed AGN search in simulated LSST images: self-supervised ViTs and CNNs
+# Rare-object detection in multi-band survey images: self-supervised ViTs and CNNs
 
 Code for a deep-learning classifier that separates strongly lensed quasars (AGN) from look-alike contaminants in 5-band
 (g r i z y) 41×41-pixel LSST first-year stamps. It was written for the
 [LSST Lensed AGN Static Search Challenge](https://agnchallenge.cbpf.br). The code also includes a probabilistic
 regression of lens parameters (Einstein radius, source position, redshifts, double/quad).
 
-- **Results and the full model comparison:** [`project_summary.md`](project_summary.md).
+- **Results and the full model comparison:** [`RESULTS.md`](RESULTS.md).
 - **The final method:** [`METHOD.md`](METHOD.md).
 
 **Main results:**
